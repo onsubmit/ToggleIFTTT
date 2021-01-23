@@ -121,7 +121,7 @@ namespace ToggleIFTTT
         /// </summary>
         /// <param name="context">Execution context</param>
         /// <returns>The application configuration settings</returns>
-        internal static IConfigurationRoot GetAppConfig(ExecutionContext context)
+        private static IConfigurationRoot GetAppConfig(ExecutionContext context)
         {
             return new ConfigurationBuilder()
                 .SetBasePath(context.FunctionAppDirectory)
